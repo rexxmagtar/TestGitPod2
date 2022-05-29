@@ -36,5 +36,6 @@ impl Contract {
             env::log_str("Try again.");
             false
         }
+    
     }
 }
