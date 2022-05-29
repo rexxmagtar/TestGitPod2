@@ -2,7 +2,7 @@
   "name": "testgitpod2",
   "version": "1.0.0",
   "description": "test description",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -49,6 +49,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rexxmagtar/TestGitPod2/issues"
-  },
-  "homepage": "https://github.com/rexxmagtar/TestGitPod2#readme"
+  }
 }
