@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "python -m http.server 3000",
-    "testRust": "rustc testRust.rs && ./testRust"
+    "testRust": "rustc testRust.rs && ./testRust",
+    "newA": "near create-account crossword.magtartest.testnet --masterAccount magtartest.testnet",
+    "delA": "near delete crossword.magtartest.testnet magtartest.testnet", 
+    "resA": "npm run delA && npm run newA"
   },
   "repository": {
     "type": "git",
