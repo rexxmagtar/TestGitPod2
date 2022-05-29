@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "python -m http.server 3000"
+    "server": "python -m http.server 3000",
+    "testRust": "rustc testRust.rs && ./testRust"
   },
   "repository": {
     "type": "git",
