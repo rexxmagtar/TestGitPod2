@@ -4,10 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import * as nearAPI from 'near-api-js';
+
+
+// Our API could be improved here :)
+// See: https://github.com/near/near-api-js/issues/612
+async function viewMethodOnContract() {
+  const provider = new nearAPI.providers.JsonRpcProvider('https://rpc.testnet.near.org');
+  const rawResult = await provider.query(`call/crossword.friend.testnet/get_solution`, 'AQ4'); // Base 58 of '{}'
+  return JSON.parse(rawResult.result.map((x) => String.fromCharCode(x)).join(''));
+}
+
+async function initCrossword() {
+  const solutionHash = await viewMethodOnContract();
+  return solutionHash ;
+}
+
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ 
+    <App solutionHash = 'chlen' />,
+ 
   document.getElementById('root')
 );
 
