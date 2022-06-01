@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function App(solutionHash) {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-         hash = {solutionHash.string}
+         hash = {solutionHash}
         </p>
         <a
           className="App-link"
