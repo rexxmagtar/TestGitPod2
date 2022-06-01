@@ -20,8 +20,8 @@
     "eject": "react-scripts eject",
     "server": "python -m http.server 3000",
     "testRust": "rustc testRust.rs && ./testRust",
-    "newA": "near create-account crossword.magtartest.testnet --masterAccount magtartest.testnet",
-    "delA": "near delete crossword.magtartest.testnet magtartest.testnet", 
+    "newA": "near create-account friend.ivantestacc.testnet --masterAccount ivantestacc.testnet",
+    "delA": "near delete friend.ivantestacc.testnet ivantestacc.testnet", 
     "resA": "npm run delA && npm run newA"
   },
   "eslintConfig": {

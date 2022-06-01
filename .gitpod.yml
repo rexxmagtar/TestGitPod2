@@ -1,6 +1,6 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: npm install   && npm install -g near-cli && near login && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && rustup target add wasm32-unknown-unknown # runs during prebuild
+  - init: npm install   && npm install -g near-cli && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && rustup target add wasm32-unknown-unknown # runs during prebuild
     command: npm start
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/

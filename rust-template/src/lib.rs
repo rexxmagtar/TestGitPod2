@@ -17,10 +17,6 @@ impl Contract {
         }
     }
 
-     fn set_solution(&mut self, solution: String) {
-        self.crossword_solution = solution;
-    }
-
     pub fn get_solution(&self) -> String {
         self.crossword_solution.clone()
     }
